@@ -1,0 +1,20 @@
+<mvc:View xmlns:myapp="myapp" 
+ xmlns:core="sap.ui.core" 
+ xmlns:l="sap.ui.layout" 
+ xmlns:mvc="sap.ui.core.mvc" 
+ xmlns:base="sap.ui.base"
+ xmlns="sap.m" 
+ xmlns:html="http://www.w3.org/1999/xhtml"
+ controllerName="myapp.controller.App">
+    
+    <myapp:controls.Chart linePoints="{/linePoints}" width="960px" height="500px">
+        <myapp:linePoints>
+            <base:ManagedObject />
+        </myapp:linePoints>
+    </myapp:controls.Chart>
+
+    <Button press="onUse10LinearPoints" text="Linear Line with 10 Points" />
+    <Button press="onUse10RandomPoints" text="Random Line with 10 Points" />
+    <Button press="onUse50RandomPoints" text="Random Line with 50 Points" />
+
+</mvc:View>
